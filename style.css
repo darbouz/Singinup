@@ -1,0 +1,184 @@
+
+body{
+    margin: 0px;
+    padding: opx;
+    background-color: aqua;
+}
+
+#back{
+    background-color: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    cursor: pointer;
+}
+/*#close{
+    position: absolute;
+    right: 20px;
+    text-align: right;
+    width: 100%;
+    font-family: fantasy;
+    font-size: 50px;
+    color: rgba(29, 29, 29, 0.8)
+}*/
+#main,#signUpForm,#msg{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    box-shadow: 0 0 0 30px rgba(255, 255, 255, .2);
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotateY(0deg);
+    cursor: default;
+}
+
+table{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+#title{
+    font-family: calibri;
+    font-size: 30px;
+    color: #222;
+    text-align: center;
+}
+
+hr{
+    margin: 5px auto;
+    padding: 0px;
+}
+
+input[type=text],input[type=password],input[type=email]{
+    height: 35px;
+    width: 250px;
+    font-family: sans-serif;
+    font-size: 11px;
+    border-radius: 35px;
+    outline: none;
+    border: 1px solid darkgray;
+    padding-left: 15px;
+    letter-spacing: 1px;
+}
+#frt{
+    font-family: calibri;
+    color: #222;
+    font-size: 12px;
+}
+#signInBtn,#signUpBtn,#ok{
+    height: 35px;
+    width: 250px;
+    font-family: calibri;
+    font-size: 14px;
+    color: white;
+    line-height: 0px;
+    border: none;
+    outline: none;
+    background-color: #FF5B3F;
+    border-radius: 35px;
+    padding: 20px;
+    cursor: pointer;
+}
+#ok{
+    width: auto !important;
+    margin-top: 50px;
+}
+
+#signUpMsg,#signInMsg{
+    font-family: calibri;
+    font-size: 12px;
+    color:#777;
+}
+a{
+    color: #313AA3;
+}
+
+#main{
+    -webkit-backface-visibility: hidden;
+    animation-duration:2s;
+}
+#signUpForm{
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate(-50%,-50%) rotateY(180deg);
+    animation-duration:2s;
+}
+#msg{
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate(-50%,-50%) rotateX(180deg);
+    animation-duration:2s;
+}
+
+
+@keyframes show-x{
+    0%{
+        transform: translate(-50%,-50%) rotateX(180deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotateX(0deg);
+    }
+}
+
+@keyframes hide-x{
+    0%{
+        transform: translate(-50%,-50%) rotateX(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotateX(180deg);
+    }
+}
+
+@keyframes show-y{
+    0%{
+        transform: translate(-50%,-50%) rotateY(180deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotateY(0deg);
+    }
+}
+
+@keyframes hide-y{
+    0%{
+        transform: translate(-50%,-50%) rotateY(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotateY(180deg);
+    }
+}
+
+
+
+.hidden{
+    display: none;
+}
+
+button{
+    height: 39px;
+    width: 80px;
+    background-color: #FF5B3F;
+    font-family: sans-serif;
+    font-size: 11px;
+    color: white;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    border-radius: 35px;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    z-index: 999;
+
+}
+
+.msg-type{
+    color: rgb(19, 155, 19) !important;
+}
+.msg-container{
+    font-family: calibri;
+    font-size: 16px;
+    color:#777;
+}

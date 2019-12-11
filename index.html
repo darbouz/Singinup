@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="Form.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="back">
+        <!--<div id='close'><span>x</span></div> -->
+        <div id="main">
+            <table border="0" cellspacing="10" id="singInTable">
+                <tr>
+                    <td>
+                        <div id="title">SIGN IN</div>
+                        <hr size="1px" width="100px" color="black">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="USER ID"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" placeholder="PASSWORD"/>
+                        <button class="showHide">SHOW</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <div id="frt"><a href="#" id="goToFP">FORGOT PASSWORD</a></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="submit" value="SIGN IN" id="signInBtn"></td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <div id="signUpMsg">
+                            DON'T HAVE AN ACCOUNT
+                            <a href="#" class="flipToSignUp">SING UP</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table border="0" cellspacing="10" class="hidden" id="forgotTable">
+                <tr>
+                    <td>
+                        <div id="title">FORGOT PASSWORD</div>
+                        <hr size="1px" width="100px" color="black">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="email" placeholder="EMAIL"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <div id="frt"><a href="#" id="goToSignIn">GO TO SIGN IN</a></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="submit" value="GET PASSWORD" id="signInBtn"></td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <div id="signUpMsg">
+                            DON'T HAVE AN ACCOUNT
+                            <a href="#" class="flipToSignUp">SING UP</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="signUpForm">
+            <table border="0" cellspacing="10">
+                <tr>
+                    <td>
+                        <div id="title">SIGN UP</div>
+                        <hr size="1px" width="100px" color="black">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="FULL NAME"/>
+                    </td>
+                </tr>
+                <tr>
+                        <td>
+                            <input type="email" placeholder="EMAIL"/>
+                        </td>
+                    </tr>
+                <tr>
+                    <td>
+                        <input type="password" placeholder="PASSWORD"/>
+                        <button class="showHide">SHOW</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <div id="frt">READ <a href="#">TERMS</a></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="submit" value="SIGN UP" id="signUpBtn"></td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <div id="signInMsg">
+                            HAVE AN ACCOUNT
+                            <a href="#" id="flipToSignIn">SING IN</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="msg">
+            <table>
+                <tr>
+                    <td>
+                        <div id="title" class="msg-type" >SUCCES</div>
+                        <hr size="1px" width="100px" color="black">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <div class="msg-container">
+                            We couldnt find your email Please check that you set the right password
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <input type="submit" value="OK" id="ok" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
